@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LORIUSMC - Media Application</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+  <header>
+    <h1>LORIUSMC</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="https://discord.gg/fejskCxXta" target="_blank">Discord</a>
+    </nav>
+  </header>
+  <main>
+    <h2 class="section-title">Media Application</h2>
+    <p class="section-title2"> - معلومات التطبيق والقواعد - </p>
+
+<p class="section-title2">1. يجب الإجابة على جميع الأسئلة بمعلومات صحيحة. يرجى التأكد من كتابة اسم المستخدم واسمك في ديسكورد بشكل صحيح. بدون ذلك، لن نتمكن من معرفة من أنت.</p>
+
+<p class="section-title2">2. يرجى التحلي بالصبر، حيث قد يستغرق الرد من 24 إلى 48 ساعة. لا تتوقع الحصول على رتبتك على الفور.</p>
+
+<p class="section-title2">3. إذا لم تتلقَ رتبتك/دورك بعد أسبوع، فذلك يعني على الأرجح أنك أجبت على الأسئلة بشكل غير صحيح.</p>
+
+<p class="section-title2">4. يجب عليك إعادة التقديم كل 30 يومًا، وإلا ستفقد رتبتك.</p>
+
+<p class="section-title2">5. نشر فيديو مطلوب، فقط وضع رابط قناتك محظور. يجب نشره على يوتيوب أو تيك توك. أي روابط غير واضحة أو غير آمنة ستؤدي إلى الرفض الفوري والعقوبة.</p>
+
+<p class="section-title2">6. يجب أن تكون في خادم ديسكورد الخاص بـ The LORIUSMC وأيضًا في خادم الديسكورد الخاص بمحتوى المبدعين.</p>
+
+<p class="section-title2">7. يجب أن يكون الفيديو خاصًا بك؛ بمعنى إذا لم تكن تمتلك الفيديو، سيتم رفض طلبك.</p>
+
+<p class="section-title2">8. يجب أن تفي بجميع متطلبات الرتبة.</p>
+
+<p class="section-title2">9. يجب أن يكون الفيديو على خوادم LORIUSMC ومُرفَع مؤخرًا. (نحن لا نقبل المحتوى القديم).</p>
+
+<p class="section-title2">10. يرجى تسجيل الفيديو باستخدام النسبة الصحيحة للعرض/الارتفاع والدقة المناسبة.</p>
+
+<p class="section-title2">11. يمكنك إعادة رفع الفيديو للحصول على رتبة جديدة فقط إذا كنت قد تقدمت سابقًا لطلب رتبة أقل.</p>
+
+<p class="section-title2">12. عند الحديث عن "المشاهدات"، نعني بها عدد المشاهدات على الفيديو الذي قمت به، وليس إجمالي عدد المشاهدات على قناتك.</p>
+
+<p class="section-title2">13. الاستفسار عن حالة تطبيقك سيؤدي إلى تحذير، ثم الرفض إذا تكرر ذلك.</p>
+
+<p class="section-title2">14. استخدام برامج لزيادة المشاهدات سيؤدي إلى الحظر الدائم من التقديم في المستقبل.</p>
+<p class="section-title2">
+  - جميع متطلبات الفيديو: <br><br>
+  يجب أن يكون الفيديو بدقة 720p أو أعلى وبمعدل 60 إطارًا في الثانية طوال الفيديو. <br>
+  يجب أن يكون الفيديو أيضًا لا يقل عن 3 دقائق. <br>
+  إذا لم يلبِ الفيديو هذه المعايير، فسيتم رفضه على الفور. <br><br>
+  
+  يجب أن تظهر الفيديوهات المقدمة أن المبدعين قد بذلوا جهدًا حقيقيًا لإنشاء محتوى ممتع وذو قيمة. <br>
+  الفيديوهات التي تبدو وكأنها تم صنعها بقليل من الجهد سيتم رفضها. <br>
+  سيقوم المراجعون بتقييم الفيديو ثم مراسلتك عبر ديسكورد لمعرفة ما إذا كان الفيديو يفي بالمتطلبات.
+</p>
+    <form id="mediaForm">
+      <label for="name">ما اسمك داخل ماين كرافت ؟</label>
+      <input type="text" id="name" name="username" placeholder="Your IGN" required>
+      <label for="disname"
+          >ما اسمك في ديسكورد ؟(مثال :lorsdev, lorsdev#0990)</label>
+      <input type="text20" id="disname" name="discord" placeholder="Your Discord username" required>
+      <label for="text20">رابط مقطع خاص للتقديم يحب ان يكون ل تيك توك او يوتيوب فقط</label>
+      <input type="url" id="text20" name="Link" placeholder="https://www.youtube.com/..." required>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+  <footer>© 2025 LORIUSMC Network</footer>
+    <script src="server.js"></script>
+  <script src="app.js"></script>
+<script>handleFormSubmit("mediaForm","media")</script>
+</body>
+</html>

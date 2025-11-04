@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LORIUSMC - Staff Application</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>LORIUSMC</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="https://discord.gg/fejskCxXta" target="_blank">Discord</a>
+      </nav>
+    </header>
+    <main>
+      <h2 class="section-title">Staff Application</h2>
+      <p class="section-title2">
+        يرجى الإجابة على الأسئلة التالية إذا كنت ترغب في الانضمام إلى إدارة "
+        لورس أم سي " ! عند تقديم طلبك، سيقوم مسؤول الإدارة بمراجعته وتحديد ما
+        إذا كنت مناسبًا للوظيفة<br />
+        بمجرد التأكد من ملاءمتك، ستصلك رسالة عبر الديسكورد. وفي حال تم رفض طلبك،
+        يجب عليك الانتظار لمدة 20 يومًا قبل التقديم مرة أخرى.
+      </p>
+      <p class="section-title2">المتطلبات:</p>
+      <p class="section-title2">
+        - يجب أن يكون عمرك 14 عامًا أو أكثر. <br />
+        - يجب أن تمتلك بريدًا إلكترونيًا صالحًا وآمنًا. <br />
+        - يجب أن يكون لديك ما لا يقل عن 5 ساعات من وقت اللعب أسبوعيًا. <br />
+        - يجب أن تكون عضوًا في سيرفرنا ماين كرافت " لورس أم سي " لمدة سبوع على
+        الأقل. <br />
+        - يجب أن تكون عضوًا في سيرفر " لورس أم سي " الديسكورد الخاص بنا لمدة لا
+        تقل عن أسبوعين. <br />
+        - يجب أن يكون لديك مايك. <br />
+        - يجب أن تتمتع بالقدرة على تصوير فيديوهات بجودة عالية، حيث ستحتاج إلى
+        تسجيل أدلة تثبت نشاط اللاعبين. <br />
+        - الخبرة السابقة في مجال إدارة سيرفرات ماين كرافت ليست ضرورية، لكنها
+        مرغوبة. <br />
+        - أي إجابة أو تقديم يتم إنشاؤه بواسطة الذكاء الاصطناعي سيؤدي إلى الرفض
+        وربما إضافتك إلى القائمة السوداء. :
+      </p>
+      <p class="section-title2">
+        تنبيه: <br />
+        عند كتابة طلب التقديم، يرجى عدم ارفاق أي معلومات شخصية مثل:
+      </p>
+      <p class="section-title2">
+        - رقم الهاتف (يكفي أن يكون لديك هاتف يعمل دون الحاجة إلى ذكر رقمك).
+        <br />
+        - بريدك الإلكتروني. <br />
+        - عنوانك السكني.
+      </p>
+      <form id="staffForm">
+        <label for="name">ما اسمك داخل ماين كرافت ؟</label>
+        <input
+          type="text"
+          name="username"
+          id="name"
+          placeholder="Your IGN"
+          required
+        />
+        <label for="disname"
+          >ما اسمك في ديسكورد ؟(مثال :lorsdev, lorsdev#0990)</label
+        >
+        <input
+          type="text"
+          name="discord"
+          id="disname"
+          placeholder="Your Discord username"
+          required
+        />
+        <label for="age">كم عمرك ؟</label>
+        <input
+          type="number"
+          id="age"
+          name="age"
+          placeholder="Your Age"
+          required
+        />
+        <label for="mic*rec"
+          >هل يمكنك تسجيل مقاطع فيديو, وهل لديك مايكوفون ؟</label
+        >
+        <input
+          type="text"
+          id="mic*rec"
+          name="mic+rec"
+          placeholder="Yer or No"
+          required
+        />
+        <label for="text1">في أي دولة تعيش ؟ وما هو توقيتك زمني ؟</label>
+        <input
+          type="text"
+          id="text1"
+          name="timezone+country"
+          placeholder="Your country & timezone"
+          required
+        />
+        <label for="text2">ما اللغات التي تتحدث بها ؟</label>
+        <input
+          type="text"
+          id="text2"
+          name="language"
+          placeholder="English, Arabic, French, etc..."
+          required
+        />
+        <label for="text3"
+          >.صف تجربتك سابقة اذا كنت قد شغلت في منصب اداري من قبل</label
+        >
+        <textarea
+          name="about1"
+          id="text3"
+          placeholder="Example: Moderator @ Server-Name (1 Years)"
+          required
+        ></textarea>
+        <label for="text4"
+          >منذ متى وانت تلعب في السيرفر؟ وكيف هو مستوى تفاعلك ؟</label
+        >
+        <input type="text" name="about2" id="text4" required />
+        <label for="text5">ماذا تعني لك الادارة ؟</label>
+        <textarea
+          name="about3"
+          id="text5"
+          placeholder="Being a staff member means ..."
+          required
+        ></textarea>
+        <label for="text6">لماذا يجب أن نختارك من بين جميع المتقديمن ؟</label>
+        <textarea
+          name="about4"
+          id="text6"
+          placeholder="I believe that you should choose me because"
+          required
+        ></textarea>
+        <label for="text7"
+          >ما رأيك في نظام الادارة أو في الادريين الحاليين ؟</label
+        >
+        <textarea name="about5" id="text7" required></textarea>
+        <label for="text8"
+          >اكتب عن خبرتك وتجربتك السابقة كادري في سيرفر اخر</label
+        >
+        <textarea name="about6" id="text8" required></textarea>
+
+        <h2 class="section-title">اسئلة السيناريو</h2>
+        <label for="text9"
+          >اذا رايت شخصا يطلق عبارات عنصرية. كيف ستتعامل معه ؟</label
+        >
+        <input type="text9" name="q1" id="text9" required />
+        <label for="text10"
+          >اذا وجت شخصا يسب او يتسخدم الفاضا غير لائقة كيف ستتصرف ؟
+        </label>
+        <textarea type="text10" name="q2" id="text10" required></textarea>
+        <label for="text11"
+          >اذا قال احد اللاعبين "سأهاجم هذا السيرفر" كيف ستتعامل معه ؟</label
+        >
+        <textarea type="text11" name="q3" id="text11" required></textarea>
+        <label for="text12"
+          >اذا كان احد اللاعبين يستعمل برنامج (غش) كيف ستتصرف ؟</label
+        >
+        <input type="text12"  name="q4" id="text12" required />
+        <label for="text13"
+          >قام احد اللاعبين بنشر رابط ضار او غير واضح في المحادثة كيف ستتصرف
+          ؟</label
+        >
+        <textarea type="text13" name="q5" id="text13" required></textarea>
+        <label for="text14"
+          >اسماء الالقاب غير اللائقة يعاقب عليها فما المدة المناسة للعقوبة
+          ؟</label
+        >
+        <textarea type="text14" name="q6" id="text14" required></textarea>
+        <label for="text15"
+          >اذا لم يستلم أحد اللاعبين رتبته اللتي اتشراها كيف ستساعده ؟</label
+        >
+        <textarea type="tex15t" name="q7" id="text15" required></textarea>
+        <label for="text16"
+          >لاحظت ان احد اللاعبين يستغل ثغرة لتكرار العناصر (غلتش) كيف ستتعامل
+          معه ؟</label
+        >
+        <input type="text16" name="q8"  id="text16" required />
+        <label for="text18"
+          >كيف ستتعامل مع لاعب يبني اشياء غير لائقة داخل سيرفر ؟</label
+        >
+        <input type="text18" name="q9" id="text18" required />
+        <label for="text19"
+          >اذا لاحظت ان احد الاداريين يستغل صلاحياته هل سستصرف واذا كنت ستتصرف
+          فكيف سستعامل مع الموقف ؟</label
+        >
+        <textarea type="text19" name="q10" id="text19" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+    <footer>© 2025 LORIUSMC Network</footer>
+    <script src="server.js"></script>
+    <script src="app.js"></script>
+    <script>
+      handleFormSubmit("staffForm", "staff");
+    </script>
+  </body>
+</html>

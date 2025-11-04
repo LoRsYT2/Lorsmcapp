@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LORIUSMC - Developer Application</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+  <header>
+    <h1>LORIUSMC</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Discord</a>
+    </nav>
+  </header>
+  <main>
+    <h2 class="section-title">Developer Application</h2>
+    <form id="devForm">
+      <input type="text" name="username" placeholder="Minecraft Username" required>
+      <input type="text" name="discord" placeholder="Discord Tag (e.g. user#0001)" required>
+      <select name="skill" required>
+        <option value="">Select your primary skill</option>
+        <option>Java / Spigot</option>
+        <option>Web Development</option>
+        <option>Plugin Development</option>
+        <option>Other</option>
+      </select>
+      <textarea name="experience" placeholder="Describe your experience in development." required></textarea>
+      <textarea name="reason" placeholder="Why do you want to join the LouiseMC Developer Team?" required></textarea>
+      <button type="submit">Submit Application</button>
+    </form>
+  </main>
+  <footer>© 2025 LORIUSMC Network</footer>
+  <script src="app.js"></script>
+  <script>handleFormSubmit("devForm","developer")</script>
+</body>
+</html>
